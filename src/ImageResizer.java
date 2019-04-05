@@ -9,12 +9,12 @@ public class ImageResizer {
 
     public static void main(String... args) throws IOException {
 
-        File input = new File("C:/Users/s5818507/Pictures/p.png");
+        File input = new File("C:/Users/Realplaza/Pictures/avion.jpg");
         BufferedImage image = ImageIO.read(input);
 
         BufferedImage resized = resize(image, 500, 500);
 
-        File output = new File("C:/Users/s5818507/Pictures/t-100.png");
+        File output = new File("C:/Users/Realplaza/Pictures/avion-1.jpg");
         ImageIO.write(resized, "png", output);
 
     }
